@@ -5,7 +5,7 @@ target_sources(fallingsand_pimoroni PRIVATE
         fallingsand.cpp
         RGBMatrixRenderer.cpp
         PimoroniPicoRenderer.cpp
-        ../../pimoroni-pico/libraries/pico_display/pico_display.cpp
+        ${PICO_PIMORONI_PATH}/libraries/pico_display/pico_display.cpp
         )
 
 # Pull in our pico_stdlib which aggregates commonly used features
