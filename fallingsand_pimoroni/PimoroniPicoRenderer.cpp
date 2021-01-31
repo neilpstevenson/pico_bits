@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "pimoroni_pico_display_sand.h"
+#include "PimoroniPicoRenderer.h"
 
 using namespace pimoroni;
 

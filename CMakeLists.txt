@@ -8,14 +8,14 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(PICO_NEIL_PATH ${PROJECT_SOURCE_DIR})
 
-# Initialize the SDK
-pico_sdk_init()
-
 include_directories("/home/pi/pico/pimoroni-pico/libraries/pico_display")
 link_directories("/home/pi/pico/pimoroni-pico/build/libraries/pico_graphics")
 link_directories("/home/pi/pico/pimoroni-pico/build/drivers/st7789")
 
 project(pico_bits C CXX ASM)
+
+# Initialize the SDK
+pico_sdk_init()
 
 #include(example_auto_set_url.cmake)
 

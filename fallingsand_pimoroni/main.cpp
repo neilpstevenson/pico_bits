@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "fallingsand.h"
-#include "pimoroni_pico_display_sand.h"
+#include "PimoroniPicoRenderer.h"
 using namespace pimoroni;
 
 static const int NUM_GRAINS = 1600; //pixels
