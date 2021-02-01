@@ -33,5 +33,7 @@ link_directories("${PICO_PIMORONI_PATH}/build/drivers/st7789")
 
 # Add sub project
 add_subdirectory(fallingsand_pimoroni)
+add_subdirectory(fallingsand_gravity)
+
 #add_subdirectory("${PICO_PIMORONI_PATH}/build/libraries/pico_display")
 
