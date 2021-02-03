@@ -10,7 +10,7 @@
 #include "PimoroniPicoRenderer.h"
 using namespace pimoroni;
 
-static const int NUM_GRAINS = 1600; //pixels
+static const int NUM_GRAINS = 9000; //pixels
 static const int GRAIN_SIZE = 3;  // Resolution is divided by this factor
 
 extern "C" void init_6050();
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     FallingSand sand(rend, 50);
 
     // Add a few grains
-    for(int i = 0; i < NUM_GRAINS/GRAIN_SIZE; i++)
+    for(int i = 0; i < NUM_GRAINS/(GRAIN_SIZE*GRAIN_SIZE); i++)
     {
         RGB_colour grain_colour = {(uint8_t)(rand()%64+195), (uint8_t)(rand()%64+195), (uint8_t)(rand()%64+128)};
         sand.addGrain(grain_colour);
